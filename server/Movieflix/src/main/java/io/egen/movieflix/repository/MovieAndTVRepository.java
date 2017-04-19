@@ -1,5 +1,5 @@
 package io.egen.movieflix.repository;
 
-public class CategoryRepositoryImp {
+public interface MovieAndTVRepository {
 
 }
