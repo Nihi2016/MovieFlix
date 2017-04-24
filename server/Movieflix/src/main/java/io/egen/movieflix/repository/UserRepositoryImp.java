@@ -28,12 +28,7 @@ public class UserRepositoryImp implements UserRepository {
 //	@Override
 //	public User login(UserLogin user) {
 //		// TODO Auto-generated method stub
-////		TypedQuery<User> query = em.createNamedQuery("User.validateLogin", User.class);
-////	       query.setParameter("password", password); 
-////	       emaild
-////	       select u from USER where u.email = email;
-////	       
-////	       query.getResultList(); 
+
 //		return null;
 //		
 //	

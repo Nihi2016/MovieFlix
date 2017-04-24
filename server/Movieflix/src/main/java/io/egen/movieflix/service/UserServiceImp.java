@@ -29,14 +29,14 @@ public class UserServiceImp implements UserService{
 	@Transactional
 	public User login(UserLogin userLogin) {
 		// TODO Auto-generated method stub
-		System.out.println("service" + userLogin.getUsername());
+		//System.out.println("service" + userLogin.getUsername());
 		User existing = repository.findByEmail(userLogin.getUsername());
 		if (existing == null){
 			throw new NotFoundException("User not found");
 		}else{
-			System.out.println(existing.getPassword()+" and "+ userLogin.getPassword());
+			
 			if(existing.getPassword().equals(userLogin.getPassword())){
-			System.out.println("password matched");
+			//System.out.println("password matched");
 					return existing;
 		}
 			else{

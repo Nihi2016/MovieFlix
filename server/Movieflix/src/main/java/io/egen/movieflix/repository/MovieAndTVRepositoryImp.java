@@ -126,19 +126,7 @@ public class MovieAndTVRepositoryImp implements MovieAndTVRepository {
 	@Transactional
 	public MovieAndTV edit(MovieAndTV movie) {
 		// TODO Auto-generated method stub
-		//checked inorder to update imdb and ratings table
-//		Imdb imdb = movie.getImdb();
-//		em.merge(imdb);
-//		System.out.println("in repo"+imdb);
-//		Ratings rating = movie.getRating();
-//		System.out.println(rating);
-//		em.merge(rating);
-//		
-//		List<Comments> comments = movie.getComments();
-//		for(Comments allComments : comments)
-//		{
-//		em.merge(allComments);
-//		}
+
 		return em.merge(movie);
 	}
 
@@ -146,19 +134,7 @@ public class MovieAndTVRepositoryImp implements MovieAndTVRepository {
 	@Transactional
 	public void delete(MovieAndTV movie) {
 		// TODO Auto-generated method stub
-		// Checked inorder to remove data in both imdb and ratings tables
-//		Imdb imdb = movie.getImdb();
-//		em.remove(imdb);
-//		
-//		Ratings rating = movie.getRating();
-//		
-//		em.remove(rating);
-//		
-//		List<Comments> comments = movie.getComments();
-//		for(Comments allComments : comments)
-//		{
-//		em.remove(allComments);
-//		}
+
 		em.remove(movie);
 	}
 

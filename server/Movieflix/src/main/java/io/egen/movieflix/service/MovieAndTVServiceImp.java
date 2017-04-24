@@ -74,7 +74,7 @@ public class MovieAndTVServiceImp implements MovieAndTVService {
 		}
 		return existing;
 	}
-
+// Logic to update average rating of a movie/tvseries
 	@Override
 	@Transactional
 	public MovieAndTV newRating(MovieAndTV mtv, double userRating) {
