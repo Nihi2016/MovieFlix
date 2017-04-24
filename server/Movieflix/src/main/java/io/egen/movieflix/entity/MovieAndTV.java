@@ -1,11 +1,15 @@
 package io.egen.movieflix.entity;
 
-import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -14,7 +18,20 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table
-public class MovieAndTV {
+@NamedQueries({
+	
+	@NamedQuery(name ="MovieAndTV.viewAll", query = "SELECT m FROM MovieAndTV m"),
+	@NamedQuery(name = "MovieAndTV.viewTopRatedMovies", query = "SELECT m FROM MovieAndTV m WHERE m.type = :mtype ORDER  BY m.imdb.imdbRating DESC"),
+	@NamedQuery(name = "MovieAndTV.viewTopRatedTVSeries", query = "SELECT t FROM MovieAndTV t WHERE t.type = :tvtype ORDER  BY t.imdb.imdbRating DESC"),
+	@NamedQuery(name = "MovieAndTV.fliterByType", query = "SELECT t FROM MovieAndTV t WHERE  t.type = :mtvtype "),
+	@NamedQuery(name = "MovieAndTV.filterByYear", query = "SELECT y FROM MovieAndTV y ORDER BY y.year DESC"),
+	@NamedQuery(name = "MovieAndTV.sortByImdbRating", query = "SELECT r FROM MovieAndTV r ORDER BY r.imdb.imdbRating DESC"),
+	@NamedQuery(name = "MovieAndTV.sortByImdbVotes", query = "SELECT v FROM MovieAndTV v ORDER BY v.imdb.imdbVotes DESC"),
+	@NamedQuery(name = "MovieAndTV.findByTitle", query = "SELECT t FROM MovieAndTV t WHERE t.title LIKE CONCAT('%',:title,'%')"),
+	@NamedQuery(name = "MovieAndTV.filterByGenre", query = "SELECT g FROM MovieAndTV g WHERE g.genre LIKE CONCAT ('%',:genre,'%')")
+	
+}) 
+public class MovieAndTV {     
 
 	@Id
 	@GenericGenerator(name="customUUID", strategy = "uuid2")
@@ -23,7 +40,7 @@ public class MovieAndTV {
 	private String title;
     private int year;
     private String rated;
-    private LocalDate released;
+    private String released;
     private String runtime;
     private String genre;
     private String director;
@@ -32,16 +49,21 @@ public class MovieAndTV {
     private String plot; 
     private String language;
     private String country;
-    private String  awards;
+    private String awards;
     private String poster;
     private int metaScore;
     private String type;
-    @OneToOne
+    
+    //transient state
+    @OneToOne (cascade = CascadeType.ALL)
     private Imdb imdb;
-    @OneToOne
+    @OneToOne (cascade = CascadeType.ALL)
     private Ratings rating;
-    @OneToMany
+    //lazy initialization for collections type
+    @OneToMany (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ElementCollection
     private List<Comments> comments;
+ 
 	public String getId() {
 		return id;
 	}
@@ -66,10 +88,11 @@ public class MovieAndTV {
 	public void setRated(String rated) {
 		this.rated = rated;
 	}
-	public LocalDate getReleased() {
+	
+	public String getReleased() {
 		return released;
 	}
-	public void setReleased(LocalDate released) {
+	public void setReleased(String released) {
 		this.released = released;
 	}
 	public String getRuntime() {

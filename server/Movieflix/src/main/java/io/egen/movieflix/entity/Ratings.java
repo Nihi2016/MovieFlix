@@ -19,6 +19,7 @@ public class Ratings {
 	private double avgRating;
 	private double userRating;
 	private int noOfRatings;
+	
 	public String getId() {
 		return id;
 	}
@@ -38,9 +39,16 @@ public class Ratings {
 		this.userRating = userRating;
 	}
 	
+	public int getNoOfRatings() {
+		return noOfRatings;
+	}
+	public void setNoOfRatings(int noOfRatings) {
+		this.noOfRatings = noOfRatings;
+	}
 	public void setAvgUserRating(double userRating){
-		noOfRatings +=1;
-		avgRating = (avgRating+userRating)/noOfRatings;
+		//noOfRatings +=1;
+		
+		avgRating = ((avgRating+userRating)/noOfRatings);
 	}
 	@Override
 	public String toString() {
