@@ -94,21 +94,358 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* FontAwesome for working BootSnippet :> */
 
 
+#add,#del{
+    margin-left: 70px;
+}
+
+.starrr{
+    color: red;
+    font-size: 50px;
+}
+h1,h4{
+    color:white;
+}
+#movierow{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+body {
+    background-color: #222222;
+    /*text-decoration-color: white;*/
+}
+
+.navbar{
+    background: black;
+    border-width: 0px;
+    font-weight: 700;
+}
+li:hover{
+    background-color: white;
+    text-decoration-color: black;
+}
+
+#name {
+    color: red !important;
+}
+
+#divid{
+    color: red !important;
+}
 
 
+.moviebox {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    width: 70%;
+    height: 70%;
+}
+.caption {
+    padding:10px;
+    background-color:rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 40%;
+    overflow: hidden;
+    font-size: 11px;
+    color: #FFF;
 
+}
+.saleoffrate{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    padding-top: 13px;
+    text-align:center;
+    background-color: rgba(76, 174, 76,0.8);
+    color: #FFFFFF;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 13px;
+}
+.edit{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding-top: 13px;
+    text-align:center;
 
+    color: #FFFFFF;
 
+    line-height: 13px;
 
+}
 
+.img-responsive img{
+    width: 100%;
+}
+.container {
+    width: 100%;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding: 5px;
+}
+.btn-block {
+    margin-top: 5px;
+}
 
+@media (min-width: 384px) and (max-width: 768px) {
+    .img-responsive img{
+        max-width: 50%;
+    }
+    .img-responsive{
+        text-align: center;
+    }
+}
+.moviedetails{
+    list-style-type: none;
+    color: white;
+}
+.moviedetails ul li:hover{
+      display: none;
+}
+.movieform{
+    color: white;
+}
+.table {
+    width: 60%;
+    color: white;
+    border: 0;
+    border-top: none;
+    border-top-style: none;
+    border-style: none;
+}
 
+.table.table-borderless td, .table.table-borderless th {
+    border: 0 !important;
+}
 
+.table.table-borderless {
+    margin-bottom: 0px;
+}
+/*comments*/
+ h3{
+    text-align: left;
+}
+.panel-shadow {
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
+}
+.panel-white {
+    border: 1px solid #dddddd;
+    background-color: #222222; !important;
+    color: white !important;
+    opacity: 0.9;
+}
+.panel-white  .panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.panel-white  .panel-footer {
+    background-color: #fff;
+    border-color: #ddd;
+}
 
+.post .post-heading {
+    height: 95px;
+    padding: 20px 15px;
+}
+.post .post-heading .avatar {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: 15px;
+}
+.post .post-heading .meta .title {
+    margin-bottom: 0;
+}
+.post .post-heading .meta .title a {
+    color: white;
+}
+.post .post-heading .meta .title a:hover {
+    color: #aaaaaa;
+}
+.post .post-heading .meta .time {
+    margin-top: 8px;
+    color: #999;
+}
+.post .post-image .image {
+    width: 100%;
+    height: auto;
+}
 
+.post .post-description {
+    padding: 15px;
+    text-align: left;
+}
+.post .post-description p {
+    font-size: 14px;
+    color: white !important;
+}
 
+.post .post-footer {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+}
+.post .post-footer .input-group-addon a {
+    color: #454545;
+}
+
+.title{
+    color: white;
+}
+/*
+ * Specific styles of signin component
+ */
+/*
+ * General styles
+ */
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    /*background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+}
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+#loginbody{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv2/1e1fc120-ce81-48e2-8229-514cd3e414e5/a8e0c04a-c030-420f-8c4f-d44910d28bbb/US-en-20170417-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+}
+/*.btn.btn-signin {*/
+   /*!* background-color: #4d90fe;*/
+
+    /*!*background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*!*/
+    /*padding: 0px;*/
+    /*font-weight: 700;*/
+    /*font-size: 14px;*/
+    /*height: 36px;*/
+    /*-moz-border-radius: 3px;*/
+    /*-webkit-border-radius: 3px;*/
+    /*border-radius: 3px;*/
+    /*border: none;*/
+    /*-o-transition: all 0.218s;*/
+    /*-moz-transition: all 0.218s;*/
+    /*-webkit-transition: all 0.218s;*/
+    /*transition: all 0.218s;*/
+/*}*/
+
+/*.btn.btn-signin:hover,*/
+/*.btn.btn-signin:active,*/
+/*.btn.btn-signin:focus {*/
+    /*background-color: rgb(12, 97, 33);*/
+/*}*/
+.glyphicons{
+    color: white;
+}
+
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(12, 97, 33);
+}
 
 
 /* ==========================================================================

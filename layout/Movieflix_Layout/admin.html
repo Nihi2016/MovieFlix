@@ -1,0 +1,248 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id ="name" href="#">Movieflix</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="divid">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="admin.html">Home </a></li>
+                    <li><a href="#">Type</a></li>
+                    <li><a href="#">Year</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genre <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Comedy</a></li>
+                            <li><a href="#">Adventure</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Sci-Fi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IMDB ratings <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Top Rated Movies</a></li>
+                            <li><a href="#">Top Rated TV Series </a></li>
+                            <li><a href="#">IMDB Ratings </a></li>
+                            <li><a href="#">IMDB Votes </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Admin Dashboard</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form navbar-">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Manage Account</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Help</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">SignOut</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-18 col-sm-4 col-md-3">
+                <div class="moviebox">
+                    <div class="imgthumb img-responsive">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg">
+                    </div>
+                    <div class="caption">
+                        <h5>Avengers : Age of Ultron</h5>
+                        <h4>2015</h4>
+
+                        <p>
+                            <button type="button" class="btn btn-success btn-md btn-block">More Details</button>
+                        </p>
+                    </div>
+                    <div class="saleoffrate">
+                        <b>4.5</b><br>
+                    </div>
+                    <div class="edit">
+                        <a class="btn btn-success"href="adminDashboard.html"><span class="glyphicons glyphicons-edit"></span>Edit</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-18 col-sm-4 col-md-3">
+                <div class="moviebox">
+                    <div class="imgthumb img-responsive">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg">
+                    </div>
+                    <div class="caption">
+                        <h5>Avengers : Age of Ultron</h5>
+                        <h4>2015</h4>
+
+                        <p>
+                            <button type="button" class="btn btn-success btn-md btn-block">More Details</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-18 col-sm-4 col-md-3">
+                <div class="moviebox">
+                    <div class="imgthumb img-responsive">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg">
+                    </div>
+                    <div class="caption">
+                        <h5>Avengers : Age of Ultron</h5>
+                        <h4>2015</h4>
+
+                        <p>
+                            <button type="button" href="details.html" class="btn btn-success btn-md btn-block">More Details</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-18 col-sm-4 col-md-3">
+                <div class="moviebox">
+                    <div class="imgthumb img-responsive">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg">
+                    </div>
+                    <div class="caption">
+                        <h5>Avengers : Age of Ultron</h5>
+                        <h4>2015</h4>
+
+                        <p>
+                            <button type="button" class="btn btn-success btn-md btn-block">More Details</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-18 col-sm-4 col-md-3">
+                <div class="moviebox">
+                    <div class="imgthumb img-responsive">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg">
+                    </div>
+                    <div class="caption">
+                        <h5>Avengers : Age of Ultron</h5>
+                        <h4>2015</h4>
+
+                        <p>
+                            <button type="button" class="btn btn-success btn-md btn-block">More Details</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-18 col-sm-4 col-md-3">
+                <div class="moviebox">
+                    <div class="imgthumb img-responsive">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg">
+                    </div>
+                    <div class="caption">
+                        <h5>Avengers : Age of Ultron</h5>
+                        <h4>2015</h4>
+
+                        <p>
+                            <button type="button" class="btn btn-success btn-md btn-block">More Details</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-18 col-sm-4 col-md-3">
+                <div class="moviebox">
+                    <div class="imgthumb img-responsive">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg">
+                    </div>
+                    <div class="caption">
+                        <h5>Avengers : Age of Ultron</h5>
+                        <h4>2015</h4>
+
+                        <p>
+                            <button type="button" class="btn btn-success btn-md btn-block">More Details</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-18 col-sm-4 col-md-3">
+                <div class="moviebox">
+                    <div class="imgthumb img-responsive">
+                        <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg">
+                    </div>
+                    <div class="caption">
+                        <h5>Avengers : Age of Ultron</h5>
+                        <h4>2015</h4>
+
+                        <p>
+                            <button type="button" class="btn btn-success btn-md btn-block">More Details</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!--/row-->
+    </div><!--/container -->
+</main>
+<footer> </footer>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>
