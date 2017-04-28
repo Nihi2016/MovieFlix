@@ -35,48 +35,38 @@
             </div>
         </div>
     </nav>
- </header>
+</header>
 <main><div class="container">
     <div class="card card-container">
         <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
-        <p id="profile-name" class="profile-name-card"></p>
+
         <form class="form-signin">
             <span id="reauth-email" class="reauth-email"></span>
+            <h3 id = signup> User Signup</h3>
+            <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" required autofocus>
+            <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required autofocus>
             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <div id="remember" class="checkbox">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
-            <a href="index.html" class="btn  btn-primary btn-block btn-signin" type="submit">Sign in</a>
-        </form><!-- /form -->
-        <div> <a href="forgotPassword.html" class="forgot-password">
-            Forgot password?
-        </a>
-        </div>
-       <div>
-        <a href="signup.html" class="forgot-password">
-            New User? Signup now
-        </a>
-       </div>
+            <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required>
+            <a href="login.html" class="btn  btn-primary btn-block btn-signin" type="submit">Sign Up</a>
+        </form>
+
     </div><!-- /card-container -->
 </div><!-- /container -->
 </main>
 <footer>
     <div class="container">
 
-        <hr>
-        <div class="text-center center-block">
+    <hr>
+    <div class="text-center center-block">
 
-            <br />
-            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-        </div>
-        <hr>
-    </div></footer>
+        <br />
+        <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+        <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+        <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+    <hr>
+</div></footer>
 </body>
 </html>

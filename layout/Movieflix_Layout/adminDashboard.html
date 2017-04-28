@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -35,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id ="name" href="#">Movieflix</a>
+                <a class="navbar-brand" id ="name" href="admin.html">Movieflix</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,7 +64,7 @@
                             <li><a href="#">IMDB Votes </a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Admin Dashboard</a></li>
+                    <li><a href="#"> Create new title</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -82,7 +83,8 @@
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Help</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">SignOut</a></li>
+                            <li><a href="login.html">SignOut</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -97,113 +99,120 @@
             <h3 class="title">Movie Details</h3>
         <form class="movieform">
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Title</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Year</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input2">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Rated</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input3">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Released</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input4">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Runtime</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input5">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Genre</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input6">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Director</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input7">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Writer</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input8">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Actors</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input9">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
-                <div class="col-10">
-                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input10">
-                </div>
+                <label for="exampleTextarea">Plot</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Language</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input11">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Country</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input12">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Awards</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input13">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Poster</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input14">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">Metascore</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input15">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">imdbRatings</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input16">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                <label for="example-text-input" class="col-2 col-form-label">imdbVotes</label>
                 <div class="col-10">
                     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input17">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="exampleTextarea">Example textarea</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                <label for="example-text-input" class="col-2 col-form-label">imdbid</label>
+                <div class="col-10">
+                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input18">
+                </div>
             </div>
-            <button type="submit" class="btn btn-success">Submit</button>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">type</label>
+                <div class="col-10">
+                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input19">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Add new movie</button>
             <button type="submit" class="btn btn-primary">Reset</button>
             <button type="submit" class="btn btn-danger">Delete</button>
         </form>
@@ -211,7 +220,6 @@
         <div class="col col-md-4 col-lg-4">
             <div class="row" id="add">
             <div class="col col-md-2">
-            <button type="submit" class="btn btn-success">Add New Movie</button>
             </div>
 
                 <div class="col col-md-2" id="del">
@@ -241,5 +249,19 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 </script>
+<footer>
+    <div class="container">
+
+        <hr>
+        <div class="text-center center-block">
+
+            <br />
+            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+        <hr>
+    </div></footer>
 </body>
 </html>
